@@ -9,5 +9,14 @@ int main() {
   int earlymins;
 
   cin >> hours >> mins;
-    
-}
+
+  if (mins >= 45) {
+    earlyhours = hours;
+    earlymins = mins - 45;}
+  else {
+    earlyhours = hours - 1;
+    earlymins = mins + 15;
+  }
+
+  cout << earlyhours << " " << earlymins;
+  }
